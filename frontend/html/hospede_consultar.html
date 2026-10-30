@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/style_cad.css">
+    <script src="../js/hospede_consultar.js" defer></script>
+    <title>Consultar Hóspede</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="../index.html">Home</a>&emsp;&emsp;
+            <span class="titulo_menu">Hóspedes</span>&emsp;
+            <a href="./hospede_cadastrar.html">Cadastrar</a>&emsp;
+            <a href="./hospede_listar.html">Listar</a>&emsp;
+            <a href="./hospede_consultar.html">Consultar</a>&emsp;
+            <a href="./hospede_atualizar.html">Atualizar</a>&emsp;
+            <a href="./hospede_apagar.html">Apagar</a>
+            <br><br><hr><br>
+        </nav>
+    </header>
+    <main>
+        <h2>Consultar Hóspede por Código</h2>
+        <br>
+        <form>
+            <label for="codHospede">Código do Hóspede</label><br>
+            <input type="number" id="codHospede" required><br><br>
+            <button id="btn_consultar">Buscar</button>
+        </form>
+        <br>
+        <div id="resposta" class="resposta"></div>
+    </main>
+</body>
+</html>

@@ -1,0 +1,145 @@
+### - testes da API - com o REST Client
+
+### - Teste se o servidor está funcionando
+GET http://localhost:3000/
+Content-Type: application/json
+
+### - Teste para Cadastrar o Hóspede 1
+POST http://localhost:3000/hospede
+Content-Type: application/json
+
+{
+    "nome": "Adalberto",
+    "cpf": "123.456.789-12",
+    "email": "adalberto@gmail.com",
+    "telefone": "(47) 9 8877-6655"
+}
+
+### - Teste para Cadastrar o Hóspede 2
+POST http://localhost:3000/hospede
+Content-Type: application/json
+
+{
+    "nome": "Moises",
+    "cpf": "456.123.789-12",
+    "email": "moises@gmail.com",
+    "telefone": "(47) 9 7766-5544"
+}
+
+### - Teste para Cadastrar o Hóspede 3
+POST http://localhost:3000/hospede
+Content-Type: application/json
+
+{
+    "nome": "Marcos",
+    "cpf": "789.123.456-12",
+    "email": "marcos@gmail.com",
+    "telefone": "(47) 9 1122-5544"
+}
+
+### - Teste para Cadastrar o Hóspede 4
+POST http://localhost:3000/hospede
+Content-Type: application/json
+
+{
+    "nome": "Nestor",
+    "cpf": "789.456.123-12",
+    "email": "nestor@gmail.com",
+    "telefone": "(47) 9 2233-5544"
+}
+
+### - Teste para Consultar o Hóspede 2
+GET http://localhost:3000/hospede/2
+Content-Type: application/json
+
+### - Teste para Listar os Hóspedes
+
+GET http://localhost:3000/hospedes
+Content-Type: application/json
+
+### - Teste para Excluir o Hóspede 4
+DELETE http://localhost:3000/hospede/4
+Content-Type: application/json
+
+### - Teste para Atualizar o Hóspede 3
+PUT http://localhost:3000/hospede/3
+Content-Type: application/json
+
+{
+    "nome": "Rodrigo",
+    "cpf": "789.654.321-12",
+    "email": "rodrigo@gmail.com"
+}
+
+
+################################
+
+### - Teste para Cadastrar o Quarto 1
+POST http://localhost:3000/quarto
+Content-Type: application/json
+
+{
+    "idHospede": 1,
+    "numero": 15,
+    "diasHospedagem": 5,
+    "valorDiaria": 195.35
+}
+
+### - Teste para Cadastrar o Quarto 2
+POST http://localhost:3000/quarto
+Content-Type: application/json
+
+{
+    "idHospede": 2,
+    "numero": 7,
+    "diasHospedagem": 4,
+    "valorDiaria": 147.44
+}
+
+### - Teste para Cadastrar o Quarto 3
+POST http://localhost:3000/quarto
+Content-Type: application/json
+
+{
+    "idHospede": 3,
+    "numero": 2,
+    "diasHospedagem": 7,
+    "valorDiaria": 128.34
+}
+
+
+### - Teste para Cadastrar o Quarto 4
+POST http://localhost:3000/quarto
+Content-Type: application/json
+
+{
+    "idHospede": 3,
+    "numero": 6,
+    "diasHospedagem": 2,
+    "valorDiaria": 188.27
+}
+
+### - Teste para Consultar o Quarto 2
+GET http://localhost:3000/quarto/2
+Content-Type: application/json
+
+### - Teste para Listar os Quartos
+GET http://localhost:3000/quartos
+Content-Type: application/json
+
+### - Teste para Excluir o Quarto 4
+DELETE http://localhost:3000/quarto/4
+Content-Type: application/json
+
+### - Teste para Atualizar o Quarto 3
+PUT http://localhost:3000/quarto/3
+Content-Type: application/json
+
+{
+    "idHospede": 3,
+    "numero": 11,
+    "diasHospedagem": 5,
+    "valorDiaria": 177.77
+}
+
+

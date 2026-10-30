@@ -1,0 +1,27 @@
+input, button, select{
+    background-color: black;
+    border-radius: 16px;
+    text-align: center;
+    padding: 8px 4px;
+    color: rgb(4, 98, 156);
+    font-weight: bold;
+    width: 300px;
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+label{
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+button{
+    cursor: pointer;
+}
+
+.resposta {
+    font-size: 1.25rem;
+    color: white;
+    font-weight: bold;
+}
+
